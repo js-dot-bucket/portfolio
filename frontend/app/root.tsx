@@ -1,6 +1,5 @@
-import {Outlet, Scripts} from "react-router";
+import {Links, Outlet, Scripts} from "react-router";
 import "./styles/root.css"
-import "./styles/home.css"
 import favicon from "/favicon.png"
 
 export default function App() {
@@ -8,9 +7,7 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/png" href={favicon} />
-        <link rel="stylesheet" href="/client/assets/root-C48aqKvj.css" />
-        <link rel="stylesheet" href="/client/assets/home-DjtAlgMb.css" />
+        <Links />
       </head>
       <body>
         <Update />

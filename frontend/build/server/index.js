@@ -1,7 +1,7 @@
 import { jsx, jsxs } from "react/jsx-runtime";
 import { PassThrough } from "node:stream";
 import { createReadableStreamFromReadable } from "@react-router/node";
-import { ServerRouter, UNSAFE_withComponentProps, Outlet, Scripts } from "react-router";
+import { ServerRouter, UNSAFE_withComponentProps, Links, Outlet, Scripts } from "react-router";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 const streamTimeout = 5e3;
@@ -54,24 +54,13 @@ const entryServer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineP
   default: handleRequest,
   streamTimeout
 }, Symbol.toStringTag, { value: "Module" }));
-const favicon = "/client/assets/pic-DtmvVNpR.png";
 const root = UNSAFE_withComponentProps(function App() {
   return /* @__PURE__ */ jsxs("html", {
     lang: "en",
     children: [/* @__PURE__ */ jsxs("head", {
       children: [/* @__PURE__ */ jsx("meta", {
         charSet: "UTF-8"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "icon",
-        type: "image/png",
-        href: favicon
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "stylesheet",
-        href: "/client/assets/root-C48aqKvj.css"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "stylesheet",
-        href: "/client/assets/home-DjtAlgMb.css"
-      })]
+      }), /* @__PURE__ */ jsx(Links, {})]
     }), /* @__PURE__ */ jsxs("body", {
       children: [/* @__PURE__ */ jsx(Update, {}), /* @__PURE__ */ jsx(Navbar, {}), /* @__PURE__ */ jsx(Outlet, {}), /* @__PURE__ */ jsx(Footer, {}), /* @__PURE__ */ jsx(Scripts, {})]
     })]
@@ -110,7 +99,7 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   __proto__: null,
   default: root
 }, Symbol.toStringTag, { value: "Module" }));
-const profile = "/client/assets/pic-DtmvVNpR.png";
+const profile = "/assets/pic-DtmvVNpR.png";
 const _index = UNSAFE_withComponentProps(function Home() {
   return /* @__PURE__ */ jsx("div", {
     className: "homePage",
@@ -165,7 +154,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   __proto__: null,
   default: _index
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/client/assets/entry.client-DXH7VKyf.js", "imports": ["/client/assets/chunk-PVWAREVJ-BdaTYYtC.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/client/assets/root-BdkWEuL-.js", "imports": ["/client/assets/chunk-PVWAREVJ-BdaTYYtC.js"], "css": ["/client/assets/root-C48aqKvj.css", "/client/assets/home-DjtAlgMb.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/_index": { "id": "routes/_index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/client/assets/_index-9IzXVtex.js", "imports": ["/client/assets/chunk-PVWAREVJ-BdaTYYtC.js"], "css": ["/client/assets/home-DjtAlgMb.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/client/assets/manifest-e7813706.js", "version": "e7813706", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/assets/entry.client-B1XkS2qD.js", "imports": ["/assets/chunk-PVWAREVJ-DVjnIRmB.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/root-8oR1Fmz4.js", "imports": ["/assets/chunk-PVWAREVJ-DVjnIRmB.js"], "css": ["/assets/root-C48aqKvj.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/_index": { "id": "routes/_index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/_index-DYHHXkyh.js", "imports": ["/assets/chunk-PVWAREVJ-DVjnIRmB.js"], "css": ["/assets/_index-DjtAlgMb.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-454d477b.js", "version": "454d477b", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_subResourceIntegrity": false, "unstable_viteEnvironmentApi": false };
@@ -173,7 +162,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "/client/";
+const publicPath = "/";
 const entry = { module: entryServer };
 const routes = {
   "root": {
