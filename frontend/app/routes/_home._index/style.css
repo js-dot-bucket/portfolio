@@ -8,6 +8,7 @@
 
 .container {
   display: flex;
+  width: 830px;
   flex-direction: column;
   padding: 0px 25px;
   padding-bottom: 40px;
@@ -16,24 +17,25 @@
 .heroText { 
   font-size: 60px;
   text-decoration: underline;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .heroPara {
   color: #535353;
   font-size: 30px;
-  margin-top: 30px;
-  width: 830px;
+  padding-bottom: 30px;
 }
 
 .columnBox {
   display: flex;
+  align-items: center;
   flex-grow: 1;
+  flex-wrap: wrap-reverse;
 }
 
 .box1 {
-  width: 240px;
-  padding: 20px 0px;
+  min-width: 240px;
+  margin-right: 60px;
 }
 
 .box1 ul {
@@ -42,13 +44,13 @@
 }
 
 .box1 ul li {
-  padding: 10px 0px;
+  padding: 10px;
   font-size: 16px;
 }
 
 .box1 button {
   padding: 15px;
-  margin: 20px 0px;
+  margin-top: 20px;
   width: 100%;
   border-radius: 10px;
   background-color: #FAEDDF;
@@ -63,8 +65,6 @@
   align-items: center;
   flex-grow: 1;
   height: 300px;
-  justify-content: space-between;
-  margin-top: 10px;
 }
 
 .placeholder {
@@ -72,7 +72,7 @@
   height: 240px;
   width: 75px;
   border-radius: 10px; 
-  margin-left: 60px;
+  margin-right: 20px;
 }
 
 .bgPlaceholder {
@@ -90,3 +90,11 @@
   border-radius: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .heroText{
+    font-size: 32px;
+  }
+  .heroPara {
+    font-size: 22px;
+  }
+}
