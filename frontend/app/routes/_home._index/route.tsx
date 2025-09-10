@@ -1,4 +1,4 @@
-import "./styles/home.css";
+import "./style.css";
 import profile from "./images/profile.png";
 import {Link, useNavigate} from "react-router-dom";
 

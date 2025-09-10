@@ -9,6 +9,7 @@ export default function App() {
       <head>
         <title>Shubham | Dev & Security Researcher</title>
         <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <Links />
       </head>
       <body>

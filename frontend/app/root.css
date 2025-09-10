@@ -58,3 +58,12 @@ navbar ul li {
   border-image: linear-gradient(to right, blue, red);
   border-image-slice: 1;
 }
+
+@media screen and (max-width: 940px) {
+  navbar ul li {
+    font-size: 12px;
+  }
+  .update {
+    font-size: 9px;
+  }
+}

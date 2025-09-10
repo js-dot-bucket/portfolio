@@ -1,0 +1,71 @@
+
+.researchPage {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 903px;
+  padding: 20px;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 input {
+  width: 40%;
+  border-radius: 16px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(#FAEDDF 0 0) padding-box,
+              linear-gradient(to right, red, blue) border-box;
+}
+
+.box1 input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.box1 p {
+  font-size: 48px;
+  text-decoration: underline;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+.box2 button {
+  width: 100%;
+  height: 84px;
+  font-size: 24px;
+  text-align: start;
+  padding: 0px 30px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 940px) {
+  .box2 button {
+    font-size: 20px;
+  }
+  .box1 p {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .box1 input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container {
+    padding-top: 0px;
+  }
+}
