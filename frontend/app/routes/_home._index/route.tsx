@@ -1,5 +1,5 @@
-import "../styles/home.css";
-import profile from "/app/images/pic.png";
+import "./styles/home.css";
+import profile from "./images/profile.png";
 
 export default function Home() {
   return (
