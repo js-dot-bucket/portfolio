@@ -51,7 +51,7 @@
   border-radius: 16px;
 }
 
-button:hover {
+.box2 button:hover {
   border: 3px solid transparent;
   background: linear-gradient(#EBEBEB 0 0) padding-box,
               linear-gradient(to right, red, blue) border-box;

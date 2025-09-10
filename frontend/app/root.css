@@ -59,6 +59,11 @@ navbar ul li {
   border-image-slice: 1;
 }
 
+.underline:hover {
+  border-image: linear-gradient(to left, blue, red);
+  border-image-slice: 1;
+}
+
 @media screen and (max-width: 940px) {
   navbar ul li {
     font-size: 12px;
