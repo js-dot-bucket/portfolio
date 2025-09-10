@@ -4,6 +4,11 @@
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-color: #FAEDDF;
   display: flex;
@@ -17,7 +22,11 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  height: 35px;
+  padding: 10px;
+}
+
+.update a {
+  color: white;
 }
 
 .update {
@@ -28,7 +37,7 @@ footer {
 navbar {
   display: flex;
   justify-content: flex-end;
-  height: 40px;
+  padding: 10px;
   align-items: center;
 }
 

@@ -1,7 +1,10 @@
 import "./styles/home.css";
 import profile from "./images/profile.png";
+import {Link, useNavigate} from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/research');
   return (
     <div className="homePage">
       <div className="container">
@@ -15,13 +18,13 @@ This is where I document everything I learn raw insights, deep dives, and the oc
         <div className="columnBox">
           <div className="box1">
             <ul>
-              <li>How to find xor in any website ...</li>
-              <li>How to find xor in any website ...</li>
-              <li>How to find xor in any website ...</li>
-              <li>How to find xor in any website ...</li>
-              <li>How to find xor in any website ...</li>
+              <li><Link to="/research">How to find xor in any website ...</Link></li>
+              <li><Link to="/research">How to find xor in any website ...</Link></li>
+              <li><Link to="/research">How to find xor in any website ...</Link></li>
+              <li><Link to="/research">How to find xor in any website ...</Link></li>
+              <li><Link to="/research">How to find xor in any website ...</Link></li>
             </ul>
-            <button>Explore more blogs &#8594; </button>
+            <button onClick={handleClick}>Explore more blogs &#8594; </button>
           </div> 
           <div className="box2">
             <div className="placeholder">
