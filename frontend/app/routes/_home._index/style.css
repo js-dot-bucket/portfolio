@@ -65,12 +65,13 @@
   align-items: center;
   flex-grow: 1;
   height: 300px;
+  min-width: 300px;
 }
 
 .placeholder {
   background-color: #F3E2CF;
   height: 240px;
-  width: 75px;
+  width: 20%;
   border-radius: 10px; 
   margin-right: 20px;
 }
@@ -80,21 +81,27 @@
   align-items: center;
   justify-content: center;
   background-color: #F3E2CF;
-  width: 420px;
-  height: 250px;
+  width: 90%;
+  height: 70%;
   border-radius: 20px;
 }
 
 .bgPlaceholder img{
   border: 3px solid black;
   border-radius: 20px;
+  height: 120%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 875px) {
   .heroText{
     font-size: 32px;
   }
   .heroPara {
     font-size: 22px;
+    padding-right: 10px;
+  }
+  .box2 {
+    max-width: 500px;
   }
 }
+

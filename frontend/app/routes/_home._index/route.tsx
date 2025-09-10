@@ -30,7 +30,7 @@ This is where I document everything I learn raw insights, deep dives, and the oc
             <div className="placeholder">
             </div>
             <div className="bgPlaceholder">
-              <img src={profile} height="290px" alt="profile image"/>
+              <img src={profile} alt="profile image"/>
             </div>
           </div> 
         </div>
